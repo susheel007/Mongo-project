@@ -1,0 +1,1378 @@
+
+==> Audit <==
+|---------|---------------|----------|-----------------|---------|---------------------|----------|
+| Command |     Args      | Profile  |      User       | Version |     Start Time      | End Time |
+|---------|---------------|----------|-----------------|---------|---------------------|----------|
+| start   | --driver=qemu | minikube | susheelchennoju | v1.35.0 | 19 Jan 25 02:12 CST |          |
+| start   | --driver=qemu | minikube | susheelchennoju | v1.35.0 | 19 Jan 25 10:19 CST |          |
+| stop    |               | minikube | susheelchennoju | v1.35.0 | 19 Jan 25 10:35 CST |          |
+|---------|---------------|----------|-----------------|---------|---------------------|----------|
+
+
+==> Last Start <==
+Log file created at: 2025/01/19 10:19:55
+Running on machine: susheels-mbp
+Binary: Built with gc go1.23.4 for darwin/arm64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0119 10:19:55.942538    9943 out.go:345] Setting OutFile to fd 1 ...
+I0119 10:19:55.943331    9943 out.go:397] isatty.IsTerminal(1) = true
+I0119 10:19:55.943333    9943 out.go:358] Setting ErrFile to fd 2...
+I0119 10:19:55.943339    9943 out.go:397] isatty.IsTerminal(2) = true
+I0119 10:19:55.943650    9943 root.go:338] Updating PATH: /Users/susheelchennoju/.minikube/bin
+W0119 10:19:55.944295    9943 root.go:314] Error reading config file at /Users/susheelchennoju/.minikube/config/config.json: open /Users/susheelchennoju/.minikube/config/config.json: no such file or directory
+I0119 10:19:55.945150    9943 out.go:352] Setting JSON to false
+I0119 10:19:55.972766    9943 start.go:129] hostinfo: {"hostname":"susheels-mbp.lan","uptime":32005,"bootTime":1737271590,"procs":549,"os":"darwin","platform":"darwin","platformFamily":"Standalone Workstation","platformVersion":"15.2","kernelVersion":"24.2.0","kernelArch":"arm64","virtualizationSystem":"","virtualizationRole":"","hostId":"a4eb9b43-c104-5f38-843f-3411c8ce8d38"}
+W0119 10:19:55.972864    9943 start.go:137] gopshost.Virtualization returned error: not implemented yet
+I0119 10:19:55.978876    9943 out.go:177] 😄  minikube v1.35.0 on Darwin 15.2 (arm64)
+I0119 10:19:55.989687    9943 config.go:182] Loaded profile config "minikube": Driver=qemu2, ContainerRuntime=docker, KubernetesVersion=v1.32.0
+I0119 10:19:55.989677    9943 notify.go:220] Checking for updates...
+I0119 10:19:55.991212    9943 driver.go:394] Setting default libvirt URI to qemu:///system
+I0119 10:19:55.995692    9943 out.go:177] ✨  Using the qemu2 driver based on existing profile
+I0119 10:19:56.002911    9943 start.go:297] selected driver: qemu2
+I0119 10:19:56.003046    9943 start.go:901] validating driver "qemu2" against &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.35.0-arm64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 Memory:2200 CPUs:2 DiskSize:20000 Driver:qemu2 HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.32.0 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.32.0 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network:builtin Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:/Users:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s}
+I0119 10:19:56.003098    9943 start.go:912] status for qemu2: {Installed:true Healthy:true Running:true NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0119 10:19:56.003958    9943 cni.go:84] Creating CNI manager for ""
+I0119 10:19:56.004016    9943 cni.go:158] "qemu2" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0119 10:19:56.004130    9943 start.go:340] cluster config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.35.0-arm64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 Memory:2200 CPUs:2 DiskSize:20000 Driver:qemu2 HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.32.0 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.32.0 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network:builtin Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:/Users:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s}
+I0119 10:19:56.004362    9943 iso.go:125] acquiring lock: {Name:mkc8197ef055e8e3009b38d8412a9f9450c5a6f8 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0119 10:19:56.012653    9943 out.go:177] 👍  Starting "minikube" primary control-plane node in "minikube" cluster
+I0119 10:19:56.016630    9943 preload.go:131] Checking if preload exists for k8s version v1.32.0 and runtime docker
+I0119 10:19:56.016641    9943 preload.go:146] Found local preload: /Users/susheelchennoju/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v18-v1.32.0-docker-overlay2-arm64.tar.lz4
+I0119 10:19:56.017071    9943 cache.go:56] Caching tarball of preloaded images
+I0119 10:19:56.017363    9943 preload.go:172] Found /Users/susheelchennoju/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v18-v1.32.0-docker-overlay2-arm64.tar.lz4 in cache, skipping download
+I0119 10:19:56.017368    9943 cache.go:59] Finished verifying existence of preloaded tar for v1.32.0 on docker
+I0119 10:19:56.017443    9943 profile.go:143] Saving config to /Users/susheelchennoju/.minikube/profiles/minikube/config.json ...
+I0119 10:19:56.018304    9943 start.go:360] acquireMachinesLock for minikube: {Name:mk5864584cdc4232dfa04e6e21c0f771a9963687 Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0119 10:19:56.018339    9943 start.go:364] duration metric: took 29.666µs to acquireMachinesLock for "minikube"
+I0119 10:19:56.018345    9943 start.go:96] Skipping create...Using existing machine configuration
+I0119 10:19:56.018618    9943 fix.go:54] fixHost starting: 
+I0119 10:19:56.021122    9943 fix.go:112] recreateIfNeeded on minikube: state=Running err=<nil>
+W0119 10:19:56.021126    9943 fix.go:138] unexpected machine state, will restart: <nil>
+I0119 10:19:56.024741    9943 out.go:177] 🏃  Updating the running qemu2 "minikube" VM ...
+I0119 10:19:56.032502    9943 machine.go:93] provisionDockerMachine start ...
+I0119 10:19:56.032831    9943 main.go:141] libmachine: Using SSH client type: native
+I0119 10:19:56.033626    9943 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x102a68790] 0x102a6afd0 <nil>  [] 0s} localhost 22 <nil> <nil>}
+I0119 10:19:56.033633    9943 main.go:141] libmachine: About to run SSH command:
+hostname
+I0119 10:19:56.034317    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:19:59.036223    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:02.038322    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:05.040345    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:08.042114    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:11.043684    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:14.047211    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:17.049200    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:20.050885    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:23.052891    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:26.055984    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:29.057781    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:32.059512    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:35.061298    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:38.063233    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:41.065264    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:44.067127    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:47.069007    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:50.070852    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:53.072667    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:56.074459    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:20:59.076172    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:02.077831    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:05.079545    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:08.081073    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:11.082769    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:14.084463    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:17.086246    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:20.088167    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:23.090103    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:26.091890    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:29.093860    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:32.095821    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:35.097550    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:38.099536    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:41.101351    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:44.103282    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:47.104905    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:50.106546    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:53.108068    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:56.108859    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:21:59.110804    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:02.112323    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:05.113914    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:08.116048    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:11.117743    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:14.119368    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:17.121046    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:20.122754    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:23.124451    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:26.126130    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:29.127646    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:32.129643    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:35.131338    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:38.133234    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:41.134956    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:44.136653    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:47.138333    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:50.140034    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:53.141920    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:56.142952    9943 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0119 10:22:56.143914    9943 buildroot.go:166] provisioning hostname "minikube"
+I0119 10:22:56.144587    9943 main.go:141] libmachine: Using SSH client type: native
+I0119 10:22:56.145157    9943 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x102a68790] 0x102a6afd0 <nil>  [] 0s} localhost 22 <nil> <nil>}
+I0119 10:22:56.145166    9943 main.go:141] libmachine: About to run SSH command:
+sudo hostname minikube && echo "minikube" | sudo tee /etc/hostname
+I0119 10:22:56.146055    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:22:59.147797    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:02.149859    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:05.151694    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:08.153564    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:11.155417    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:14.157144    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:17.159108    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:20.160908    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:23.163000    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:26.164874    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:29.166954    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:32.168593    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:35.170290    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:38.172286    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:41.173937    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:44.175826    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:47.177727    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:50.179504    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:53.181172    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:56.184224    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:23:59.186130    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:02.187759    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:05.189596    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:08.191314    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:11.193129    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:14.194847    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:17.196572    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:20.198348    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:23.200378    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:26.202188    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:29.204243    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:32.205962    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:35.207786    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:38.209462    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:41.211398    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:44.213129    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:47.214797    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:50.216745    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:53.218562    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:56.220578    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:24:59.222336    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:02.224047    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:05.225825    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:08.227600    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:11.229563    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:14.231154    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:17.232948    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:20.234559    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:23.236641    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:26.238244    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:29.239814    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:32.241443    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:35.243005    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:38.244783    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:41.246412    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:44.248163    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:47.249868    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:50.251532    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:53.253179    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:56.253664    9943 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0119 10:25:56.254796    9943 main.go:141] libmachine: Using SSH client type: native
+I0119 10:25:56.255264    9943 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x102a68790] 0x102a6afd0 <nil>  [] 0s} localhost 22 <nil> <nil>}
+I0119 10:25:56.255285    9943 main.go:141] libmachine: About to run SSH command:
+
+		if ! grep -xq '.*\sminikube' /etc/hosts; then
+			if grep -xq '127.0.1.1\s.*' /etc/hosts; then
+				sudo sed -i 's/^127.0.1.1\s.*/127.0.1.1 minikube/g' /etc/hosts;
+			else 
+				echo '127.0.1.1 minikube' | sudo tee -a /etc/hosts; 
+			fi
+		fi
+I0119 10:25:56.256143    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:25:59.257812    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:02.259420    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:05.261079    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:08.262702    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:11.264354    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:14.266008    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:17.267738    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:20.271059    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:23.272611    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:26.274174    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:29.275745    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:32.277449    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:35.279158    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:38.280177    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:41.281809    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:44.283499    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:47.285313    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:50.286915    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:53.288581    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:56.290146    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:26:59.291897    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:02.293980    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:05.295670    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:08.297196    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:11.298794    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:14.300510    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:17.302222    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:20.304447    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:23.306276    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:26.308278    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:29.310067    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:32.312028    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:35.313726    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:38.315282    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:41.316985    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:44.318715    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:47.320366    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:50.322127    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:53.323708    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:56.326142    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:27:59.326869    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:02.328511    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:05.330350    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:08.332018    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:11.333836    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:14.335433    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:17.337000    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:20.338616    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:23.340208    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:26.341933    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:29.343643    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:32.345532    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:35.347156    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:38.348925    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:41.350706    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:44.352681    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:47.354614    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:50.356565    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:53.358580    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:56.359613    9943 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0119 10:28:56.361017    9943 buildroot.go:172] set auth options {CertDir:/Users/susheelchennoju/.minikube CaCertPath:/Users/susheelchennoju/.minikube/certs/ca.pem CaPrivateKeyPath:/Users/susheelchennoju/.minikube/certs/ca-key.pem CaCertRemotePath:/etc/docker/ca.pem ServerCertPath:/Users/susheelchennoju/.minikube/machines/server.pem ServerKeyPath:/Users/susheelchennoju/.minikube/machines/server-key.pem ClientKeyPath:/Users/susheelchennoju/.minikube/certs/key.pem ServerCertRemotePath:/etc/docker/server.pem ServerKeyRemotePath:/etc/docker/server-key.pem ClientCertPath:/Users/susheelchennoju/.minikube/certs/cert.pem ServerCertSANs:[] StorePath:/Users/susheelchennoju/.minikube}
+I0119 10:28:56.361795    9943 buildroot.go:174] setting up certificates
+I0119 10:28:56.362636    9943 provision.go:84] configureAuth start
+I0119 10:28:56.362660    9943 provision.go:143] copyHostCerts
+I0119 10:28:56.363728    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:28:56.364299    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:28:56.364541    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:28:56.365132    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:28:56.401355    9943 provision.go:177] copyRemoteCerts
+I0119 10:28:56.403178    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:28:56.403320    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:28:56.404158    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:56.404364    9943 retry.go:31] will retry after 174.095384ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:28:56.580277    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:56.580284    9943 retry.go:31] will retry after 208.407775ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:28:56.790491    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:56.790496    9943 retry.go:31] will retry after 695.513524ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:28:57.487757    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:57.488953    9943 retry.go:31] will retry after 322.818278ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:57.812999    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:28:57.813722    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:57.813726    9943 retry.go:31] will retry after 337.344438ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:28:58.152800    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:58.152804    9943 retry.go:31] will retry after 295.174743ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:28:58.449763    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:58.449767    9943 retry.go:31] will retry after 739.777792ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:28:59.191360    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:59.191368    9943 retry.go:31] will retry after 592.530309ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:28:59.785774    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:59.787020    9943 provision.go:87] duration metric: took 3.423219042s to configureAuth
+W0119 10:28:59.787025    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:59.787058    9943 retry.go:31] will retry after 63.061µs: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:59.787143    9943 provision.go:84] configureAuth start
+I0119 10:28:59.787149    9943 provision.go:143] copyHostCerts
+I0119 10:28:59.787239    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:28:59.787244    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:28:59.787385    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:28:59.787585    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:28:59.787588    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:28:59.787647    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:28:59.787761    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:28:59.787763    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:28:59.787809    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:28:59.787919    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:28:59.884432    9943 provision.go:177] copyRemoteCerts
+I0119 10:28:59.884488    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:28:59.884493    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:28:59.885179    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:28:59.885183    9943 retry.go:31] will retry after 194.510298ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:00.081371    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:00.081391    9943 retry.go:31] will retry after 366.760293ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:00.449948    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:00.449952    9943 retry.go:31] will retry after 694.079626ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:01.145749    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:01.145752    9943 retry.go:31] will retry after 524.498886ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:01.672080    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:01.672139    9943 provision.go:87] duration metric: took 1.885021333s to configureAuth
+W0119 10:29:01.672141    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:01.672147    9943 retry.go:31] will retry after 163.367µs: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:01.672354    9943 provision.go:84] configureAuth start
+I0119 10:29:01.672361    9943 provision.go:143] copyHostCerts
+I0119 10:29:01.672439    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:01.672443    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:01.672583    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:01.672806    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:01.672807    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:01.672853    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:01.672972    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:01.672974    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:01.673017    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:01.673133    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:01.726662    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:01.726709    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:01.726714    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:01.727312    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:01.727315    9943 retry.go:31] will retry after 141.246109ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:01.870152    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:01.870155    9943 retry.go:31] will retry after 471.29388ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:02.343156    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:02.343162    9943 retry.go:31] will retry after 354.385879ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:02.699265    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:02.699267    9943 retry.go:31] will retry after 691.83826ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:03.393032    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:03.393076    9943 retry.go:31] will retry after 211.086507ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:03.605182    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:03.605978    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:03.605981    9943 retry.go:31] will retry after 299.661868ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:03.907442    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:03.907445    9943 retry.go:31] will retry after 526.138603ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:04.435293    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:04.435296    9943 retry.go:31] will retry after 756.782512ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:05.193981    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:05.194030    9943 provision.go:87] duration metric: took 3.521725375s to configureAuth
+W0119 10:29:05.194033    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:05.194038    9943 retry.go:31] will retry after 241.895µs: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:05.194342    9943 provision.go:84] configureAuth start
+I0119 10:29:05.194348    9943 provision.go:143] copyHostCerts
+I0119 10:29:05.194433    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:05.194438    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:05.194580    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:05.194866    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:05.194868    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:05.194914    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:05.195023    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:05.195025    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:05.195070    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:05.195158    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:05.276750    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:05.276802    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:05.276807    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:05.277447    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:05.277452    9943 retry.go:31] will retry after 225.253558ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:05.504479    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:05.504483    9943 retry.go:31] will retry after 326.162594ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:05.832365    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:05.832368    9943 retry.go:31] will retry after 542.121478ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:06.376277    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:06.376291    9943 retry.go:31] will retry after 373.494338ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:06.750810    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:06.751525    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:06.751529    9943 retry.go:31] will retry after 129.53212ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:06.882552    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:06.882556    9943 retry.go:31] will retry after 366.728287ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:07.250981    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:07.250984    9943 retry.go:31] will retry after 552.714484ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:07.805358    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:07.805375    9943 provision.go:87] duration metric: took 2.611070916s to configureAuth
+W0119 10:29:07.805376    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:07.805379    9943 retry.go:31] will retry after 355.987µs: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:07.805803    9943 provision.go:84] configureAuth start
+I0119 10:29:07.805805    9943 provision.go:143] copyHostCerts
+I0119 10:29:07.805840    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:07.805841    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:07.805923    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:07.806088    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:07.806089    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:07.806132    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:07.806232    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:07.806233    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:07.806269    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:07.806350    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:07.942013    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:07.942043    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:07.942046    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:07.942648    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:07.942651    9943 retry.go:31] will retry after 253.437767ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:08.197829    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:08.197832    9943 retry.go:31] will retry after 324.596959ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:08.524130    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:08.524132    9943 retry.go:31] will retry after 503.861075ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:09.029716    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:09.029730    9943 retry.go:31] will retry after 318.764304ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:09.349515    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:09.350325    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:09.350328    9943 retry.go:31] will retry after 320.5474ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:09.672698    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:09.672701    9943 retry.go:31] will retry after 339.864363ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:10.014324    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:10.014327    9943 retry.go:31] will retry after 551.791538ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:10.567785    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:10.567789    9943 retry.go:31] will retry after 701.58744ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:11.270975    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:11.270992    9943 provision.go:87] duration metric: took 3.465241625s to configureAuth
+W0119 10:29:11.270993    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:11.270996    9943 retry.go:31] will retry after 267.726µs: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:11.271305    9943 provision.go:84] configureAuth start
+I0119 10:29:11.271320    9943 provision.go:143] copyHostCerts
+I0119 10:29:11.271363    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:11.271365    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:11.271464    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:11.271636    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:11.271638    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:11.271685    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:11.271782    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:11.271783    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:11.271823    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:11.271906    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:11.321880    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:11.321916    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:11.321919    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:11.322580    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:11.322584    9943 retry.go:31] will retry after 374.010571ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:11.698337    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:11.698351    9943 retry.go:31] will retry after 282.109923ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:11.982408    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:11.982436    9943 retry.go:31] will retry after 612.802276ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:12.596970    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:12.596974    9943 retry.go:31] will retry after 553.635409ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:13.152379    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:13.152418    9943 provision.go:87] duration metric: took 1.881125375s to configureAuth
+W0119 10:29:13.152420    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:13.152436    9943 retry.go:31] will retry after 1.009178ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:13.153586    9943 provision.go:84] configureAuth start
+I0119 10:29:13.153601    9943 provision.go:143] copyHostCerts
+I0119 10:29:13.153676    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:13.153680    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:13.153820    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:13.154093    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:13.154095    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:13.154141    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:13.154247    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:13.154249    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:13.154292    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:13.154369    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:13.207366    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:13.207410    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:13.207415    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:13.208003    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:13.208006    9943 retry.go:31] will retry after 188.812851ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:13.398424    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:13.398428    9943 retry.go:31] will retry after 436.985532ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:13.837036    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:13.837039    9943 retry.go:31] will retry after 601.868379ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:14.440689    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:14.440704    9943 retry.go:31] will retry after 351.660192ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:14.793376    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:14.793951    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:14.793953    9943 retry.go:31] will retry after 284.841902ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:15.080461    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:15.080464    9943 retry.go:31] will retry after 325.21951ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:15.407257    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:15.407261    9943 retry.go:31] will retry after 424.873291ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:15.833749    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:15.833752    9943 retry.go:31] will retry after 733.86703ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:16.569421    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:16.569438    9943 provision.go:87] duration metric: took 3.415902958s to configureAuth
+W0119 10:29:16.569440    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:16.569442    9943 retry.go:31] will retry after 1.351722ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:16.570990    9943 provision.go:84] configureAuth start
+I0119 10:29:16.570992    9943 provision.go:143] copyHostCerts
+I0119 10:29:16.571017    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:16.571019    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:16.571095    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:16.571248    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:16.571249    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:16.571287    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:16.571378    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:16.571379    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:16.571415    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:16.571492    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:16.838789    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:16.838839    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:16.838845    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:16.839510    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:16.839518    9943 retry.go:31] will retry after 308.445108ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:17.149575    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:17.149578    9943 retry.go:31] will retry after 512.655228ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:17.663973    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:17.663977    9943 retry.go:31] will retry after 510.302548ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:18.176048    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:18.176067    9943 retry.go:31] will retry after 281.025501ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:18.458132    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:18.459107    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:18.459115    9943 retry.go:31] will retry after 315.629389ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:18.776494    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:18.776497    9943 retry.go:31] will retry after 559.922237ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:19.338124    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:19.338127    9943 retry.go:31] will retry after 518.395785ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:19.858138    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:19.858175    9943 provision.go:87] duration metric: took 3.287231125s to configureAuth
+W0119 10:29:19.858177    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:19.858183    9943 retry.go:31] will retry after 1.677643ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:19.860093    9943 provision.go:84] configureAuth start
+I0119 10:29:19.860097    9943 provision.go:143] copyHostCerts
+I0119 10:29:19.860144    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:19.860147    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:19.860266    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:19.860476    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:19.860478    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:19.860523    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:19.860617    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:19.860619    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:19.860659    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:19.860738    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:19.987665    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:19.987715    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:19.987718    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:19.988417    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:19.988421    9943 retry.go:31] will retry after 154.309588ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:20.144303    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:20.144306    9943 retry.go:31] will retry after 441.268834ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:20.587308    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:20.587311    9943 retry.go:31] will retry after 770.639779ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:21.359600    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:21.359604    9943 retry.go:31] will retry after 533.807402ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:21.895077    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:21.895096    9943 provision.go:87] duration metric: took 2.035033041s to configureAuth
+W0119 10:29:21.895098    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:21.895104    9943 retry.go:31] will retry after 2.785323ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:21.898250    9943 provision.go:84] configureAuth start
+I0119 10:29:21.898253    9943 provision.go:143] copyHostCerts
+I0119 10:29:21.898277    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:21.898279    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:21.898350    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:21.898490    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:21.898492    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:21.898529    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:21.898614    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:21.898615    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:21.898650    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:21.898725    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:22.133366    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:22.133407    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:22.133411    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:22.134199    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:22.134205    9943 retry.go:31] will retry after 155.388694ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:22.291183    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:22.291188    9943 retry.go:31] will retry after 367.047443ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:22.659982    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:22.659985    9943 retry.go:31] will retry after 325.765936ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:22.987410    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:22.987414    9943 retry.go:31] will retry after 778.189185ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:23.767379    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:23.767395    9943 retry.go:31] will retry after 212.181504ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:23.980594    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:23.981244    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:23.981247    9943 retry.go:31] will retry after 373.658088ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:24.356581    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:24.356584    9943 retry.go:31] will retry after 346.377311ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:24.704696    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:24.704699    9943 retry.go:31] will retry after 812.07322ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:25.518605    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:25.518651    9943 provision.go:87] duration metric: took 3.620453291s to configureAuth
+W0119 10:29:25.518654    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:25.518662    9943 retry.go:31] will retry after 3.083119ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:25.522143    9943 provision.go:84] configureAuth start
+I0119 10:29:25.522147    9943 provision.go:143] copyHostCerts
+I0119 10:29:25.522216    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:25.522219    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:25.522333    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:25.522507    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:25.522509    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:25.522547    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:25.522644    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:25.522645    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:25.522682    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:25.522759    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:25.661310    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:25.661363    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:25.661368    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:25.662028    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:25.662032    9943 retry.go:31] will retry after 368.480289ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:26.032186    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:26.032191    9943 retry.go:31] will retry after 451.979453ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:26.485884    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:26.485887    9943 retry.go:31] will retry after 484.299594ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:26.971857    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:26.971875    9943 retry.go:31] will retry after 194.986639ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:27.167901    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:27.168478    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:27.168482    9943 retry.go:31] will retry after 370.451898ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:27.540578    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:27.540582    9943 retry.go:31] will retry after 493.498099ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:28.035821    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:28.035824    9943 retry.go:31] will retry after 619.107206ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:28.656543    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:28.656563    9943 provision.go:87] duration metric: took 3.134465375s to configureAuth
+W0119 10:29:28.656565    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:28.656568    9943 retry.go:31] will retry after 8.253351ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:28.665859    9943 provision.go:84] configureAuth start
+I0119 10:29:28.665862    9943 provision.go:143] copyHostCerts
+I0119 10:29:28.665905    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:28.665907    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:28.666002    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:28.666175    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:28.666179    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:28.666228    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:28.666335    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:28.666337    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:28.666376    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:28.666459    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:28.721577    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:28.721610    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:28.721613    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:28.722267    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:28.722271    9943 retry.go:31] will retry after 194.33548ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:28.918170    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:28.918174    9943 retry.go:31] will retry after 552.495863ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:29.472285    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:29.472287    9943 retry.go:31] will retry after 403.899847ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:29.877812    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:29.877815    9943 retry.go:31] will retry after 679.850604ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:30.559430    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:30.559448    9943 provision.go:87] duration metric: took 1.893616791s to configureAuth
+W0119 10:29:30.559450    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:30.559452    9943 retry.go:31] will retry after 7.767643ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:30.568202    9943 provision.go:84] configureAuth start
+I0119 10:29:30.568204    9943 provision.go:143] copyHostCerts
+I0119 10:29:30.568236    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:30.568238    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:30.568287    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:30.568423    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:30.568425    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:30.568465    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:30.568561    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:30.568562    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:30.568599    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:30.568672    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:30.611618    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:30.611646    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:30.611654    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:30.612528    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:30.612532    9943 retry.go:31] will retry after 301.031392ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:30.915213    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:30.915215    9943 retry.go:31] will retry after 554.710103ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:31.471741    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:31.471744    9943 retry.go:31] will retry after 729.843976ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:32.203325    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:32.203341    9943 retry.go:31] will retry after 221.132379ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:32.425521    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:32.426462    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:32.426469    9943 retry.go:31] will retry after 195.87976ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:32.623832    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:32.623835    9943 retry.go:31] will retry after 353.538859ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:32.979070    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:32.979074    9943 retry.go:31] will retry after 356.433096ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:33.337227    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:33.337230    9943 retry.go:31] will retry after 474.286051ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:33.813154    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:33.813202    9943 provision.go:87] duration metric: took 3.245030125s to configureAuth
+W0119 10:29:33.813205    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:33.813209    9943 retry.go:31] will retry after 11.016656ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:33.825240    9943 provision.go:84] configureAuth start
+I0119 10:29:33.826279    9943 provision.go:143] copyHostCerts
+I0119 10:29:33.826312    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:33.826314    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:33.826415    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:33.826534    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:33.826536    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:33.826573    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:33.826663    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:33.826664    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:33.826703    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:33.826780    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:33.947543    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:33.947591    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:33.947596    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:33.948247    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:33.948253    9943 retry.go:31] will retry after 128.22959ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:34.078079    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:34.078082    9943 retry.go:31] will retry after 195.858132ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:34.275443    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:34.275449    9943 retry.go:31] will retry after 684.806127ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:34.961848    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:34.961851    9943 retry.go:31] will retry after 729.549533ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:35.693143    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:35.693173    9943 provision.go:87] duration metric: took 1.867958333s to configureAuth
+W0119 10:29:35.693175    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:35.693181    9943 retry.go:31] will retry after 19.890208ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:35.714087    9943 provision.go:84] configureAuth start
+I0119 10:29:35.714092    9943 provision.go:143] copyHostCerts
+I0119 10:29:35.714134    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:35.714136    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:35.714251    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:35.714437    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:35.714439    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:35.714486    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:35.714586    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:35.714587    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:35.714626    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:35.714711    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:35.975150    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:35.975217    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:35.975222    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:35.976009    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:35.976016    9943 retry.go:31] will retry after 254.838995ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:36.232493    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:36.232496    9943 retry.go:31] will retry after 536.091801ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:36.770605    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:36.770630    9943 retry.go:31] will retry after 648.304682ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:37.420541    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:37.420574    9943 retry.go:31] will retry after 143.026801ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:37.564637    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:37.565400    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:37.565403    9943 retry.go:31] will retry after 145.682385ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:37.712698    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:37.712701    9943 retry.go:31] will retry after 375.380869ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:38.089744    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:38.089747    9943 retry.go:31] will retry after 571.199117ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:38.662816    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:38.662843    9943 provision.go:87] duration metric: took 2.948797041s to configureAuth
+W0119 10:29:38.662846    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:38.662849    9943 retry.go:31] will retry after 19.661431ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:38.683525    9943 provision.go:84] configureAuth start
+I0119 10:29:38.683534    9943 provision.go:143] copyHostCerts
+I0119 10:29:38.683582    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:38.683585    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:38.683812    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:38.684018    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:38.684020    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:38.684062    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:38.684162    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:38.684164    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:38.684200    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:38.684276    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:38.777417    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:38.777461    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:38.777465    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:38.778101    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:38.778105    9943 retry.go:31] will retry after 173.834031ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:38.953531    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:38.953534    9943 retry.go:31] will retry after 350.134328ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:39.305355    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:39.305359    9943 retry.go:31] will retry after 444.12947ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:39.751446    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:39.751488    9943 retry.go:31] will retry after 172.319146ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:39.924830    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:39.925471    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:39.925474    9943 retry.go:31] will retry after 156.326273ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:40.083498    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:40.083503    9943 retry.go:31] will retry after 554.86902ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:40.640050    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:40.640053    9943 retry.go:31] will retry after 831.298859ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:41.473086    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:41.473107    9943 provision.go:87] duration metric: took 2.789621042s to configureAuth
+W0119 10:29:41.473108    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:41.473112    9943 retry.go:31] will retry after 64.04966ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:41.538175    9943 provision.go:84] configureAuth start
+I0119 10:29:41.538179    9943 provision.go:143] copyHostCerts
+I0119 10:29:41.538226    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:41.538228    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:41.538367    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:41.538577    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:41.538579    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:41.538633    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:41.538738    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:41.538740    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:41.538788    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:41.538873    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:41.656085    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:41.656155    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:41.656159    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:41.656811    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:41.656815    9943 retry.go:31] will retry after 226.108095ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:41.884557    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:41.884559    9943 retry.go:31] will retry after 211.497266ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:42.097719    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:42.097721    9943 retry.go:31] will retry after 336.534522ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:42.435862    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:42.435864    9943 retry.go:31] will retry after 891.104511ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:43.329201    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:43.329216    9943 retry.go:31] will retry after 304.046985ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:43.634274    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:43.635093    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:43.635096    9943 retry.go:31] will retry after 258.146155ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:43.894914    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:43.894917    9943 retry.go:31] will retry after 357.14004ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:44.253746    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:44.253749    9943 retry.go:31] will retry after 805.380277ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:45.061300    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:45.061367    9943 provision.go:87] duration metric: took 3.523242541s to configureAuth
+W0119 10:29:45.061370    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:45.061375    9943 retry.go:31] will retry after 52.717858ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:45.115103    9943 provision.go:84] configureAuth start
+I0119 10:29:45.115107    9943 provision.go:143] copyHostCerts
+I0119 10:29:45.115148    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:45.115151    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:45.115229    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:45.115417    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:45.115418    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:45.115459    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:45.115574    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:45.115576    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:45.115609    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:45.115688    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:45.229021    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:45.229986    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:45.229993    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:45.230681    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:45.230687    9943 retry.go:31] will retry after 164.565096ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:45.396745    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:45.396752    9943 retry.go:31] will retry after 281.532265ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:45.679967    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:45.679972    9943 retry.go:31] will retry after 483.586523ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:46.165278    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:46.165282    9943 retry.go:31] will retry after 470.944338ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:46.637996    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:46.638030    9943 retry.go:31] will retry after 238.50679ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:46.877569    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:46.878295    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:46.878298    9943 retry.go:31] will retry after 264.109678ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:47.144022    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:47.144024    9943 retry.go:31] will retry after 432.589807ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:47.578400    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:47.578403    9943 retry.go:31] will retry after 699.364085ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:48.279533    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:48.279536    9943 retry.go:31] will retry after 426.568251ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:48.707708    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:48.707730    9943 provision.go:87] duration metric: took 3.592679s to configureAuth
+W0119 10:29:48.707732    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:48.707736    9943 retry.go:31] will retry after 145.336879ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:48.854098    9943 provision.go:84] configureAuth start
+I0119 10:29:48.854102    9943 provision.go:143] copyHostCerts
+I0119 10:29:48.854143    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:48.854145    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:48.854265    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:48.854440    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:48.854441    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:48.854483    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:48.854573    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:48.854574    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:48.854612    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:48.854692    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:49.041982    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:49.042049    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:49.042055    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:49.042787    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:49.042796    9943 retry.go:31] will retry after 203.087386ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:49.247463    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:49.247466    9943 retry.go:31] will retry after 457.797932ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:49.706986    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:49.706989    9943 retry.go:31] will retry after 337.146723ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:50.045818    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:50.045821    9943 retry.go:31] will retry after 990.44981ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:51.037982    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:51.038006    9943 provision.go:87] duration metric: took 2.183938167s to configureAuth
+W0119 10:29:51.038008    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:51.038013    9943 retry.go:31] will retry after 202.446882ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:51.241470    9943 provision.go:84] configureAuth start
+I0119 10:29:51.241475    9943 provision.go:143] copyHostCerts
+I0119 10:29:51.241516    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:51.241518    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:51.241632    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:51.241811    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:51.241812    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:51.241862    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:51.241961    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:51.241962    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:51.242003    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:51.242093    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:51.337371    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:51.337401    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:51.337405    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:51.338099    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:51.338103    9943 retry.go:31] will retry after 125.205132ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:51.464869    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:51.464872    9943 retry.go:31] will retry after 301.071137ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:51.767557    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:51.767559    9943 retry.go:31] will retry after 361.38259ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:52.130608    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:52.130611    9943 retry.go:31] will retry after 937.72853ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:53.070276    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:53.070317    9943 retry.go:31] will retry after 195.736068ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:53.267074    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:53.267790    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:53.267793    9943 retry.go:31] will retry after 132.88498ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:53.402255    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:53.402258    9943 retry.go:31] will retry after 502.136769ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:53.906099    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:53.906101    9943 retry.go:31] will retry after 680.210836ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:54.587931    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:54.587934    9943 retry.go:31] will retry after 484.203395ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:55.073806    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:55.073826    9943 provision.go:87] duration metric: took 3.832411209s to configureAuth
+W0119 10:29:55.073828    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:55.073831    9943 retry.go:31] will retry after 174.297134ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:55.249143    9943 provision.go:84] configureAuth start
+I0119 10:29:55.249147    9943 provision.go:143] copyHostCerts
+I0119 10:29:55.249194    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:55.249196    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:55.249409    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:55.249594    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:55.249596    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:55.249646    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:55.249739    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:55.249741    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:55.249779    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:55.250132    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:55.413335    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:55.413387    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:55.413391    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:55.414074    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:55.414077    9943 retry.go:31] will retry after 351.723772ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:55.767449    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:55.767452    9943 retry.go:31] will retry after 346.238941ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:56.115288    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:56.115299    9943 retry.go:31] will retry after 730.349961ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:56.847487    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:56.847504    9943 retry.go:31] will retry after 135.287188ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:56.983803    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:56.984430    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:56.984433    9943 retry.go:31] will retry after 220.975269ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:57.207004    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:57.207009    9943 retry.go:31] will retry after 389.564207ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:57.598303    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:57.598310    9943 retry.go:31] will retry after 589.057894ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:58.189120    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:58.189159    9943 provision.go:87] duration metric: took 2.940057833s to configureAuth
+W0119 10:29:58.189162    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:58.189167    9943 retry.go:31] will retry after 366.093894ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:58.556301    9943 provision.go:84] configureAuth start
+I0119 10:29:58.556306    9943 provision.go:143] copyHostCerts
+I0119 10:29:58.556379    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:29:58.556385    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:29:58.556529    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:29:58.556751    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:29:58.556753    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:29:58.556801    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:29:58.556911    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:29:58.556923    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:29:58.556970    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:29:58.557050    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:29:58.588879    9943 provision.go:177] copyRemoteCerts
+I0119 10:29:58.589708    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:29:58.589713    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:29:58.590437    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:58.590442    9943 retry.go:31] will retry after 288.927854ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:58.880903    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:58.880906    9943 retry.go:31] will retry after 497.667093ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:59.380249    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:59.380258    9943 retry.go:31] will retry after 288.105851ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:29:59.669923    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:29:59.669926    9943 retry.go:31] will retry after 439.512367ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:00.111193    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:00.111235    9943 retry.go:31] will retry after 209.979925ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:00.322236    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:00.322933    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:00.322937    9943 retry.go:31] will retry after 355.062353ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:00.679827    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:00.679831    9943 retry.go:31] will retry after 470.048655ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:01.151690    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:01.151693    9943 retry.go:31] will retry after 701.540625ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:01.854969    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:01.854991    9943 provision.go:87] duration metric: took 3.29873725s to configureAuth
+W0119 10:30:01.854994    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:01.854998    9943 retry.go:31] will retry after 504.262893ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:02.360275    9943 provision.go:84] configureAuth start
+I0119 10:30:02.360280    9943 provision.go:143] copyHostCerts
+I0119 10:30:02.360325    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:30:02.360327    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:30:02.360454    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:30:02.360648    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:30:02.360650    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:30:02.360691    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:30:02.360784    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:30:02.360786    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:30:02.360824    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:30:02.360911    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:30:02.431502    9943 provision.go:177] copyRemoteCerts
+I0119 10:30:02.431575    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:30:02.431579    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:02.432377    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:02.432381    9943 retry.go:31] will retry after 174.380265ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:02.608405    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:02.608410    9943 retry.go:31] will retry after 225.799474ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:02.835945    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:02.835947    9943 retry.go:31] will retry after 425.239946ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:03.263010    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:03.263015    9943 retry.go:31] will retry after 503.795523ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:03.768619    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:03.768632    9943 retry.go:31] will retry after 153.406004ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:03.923055    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:03.923713    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:03.923716    9943 retry.go:31] will retry after 345.616996ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:04.271053    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:04.271056    9943 retry.go:31] will retry after 431.839525ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:04.704651    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:04.704653    9943 retry.go:31] will retry after 802.981802ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:05.509367    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:05.509383    9943 provision.go:87] duration metric: took 3.149154916s to configureAuth
+W0119 10:30:05.509385    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:05.509388    9943 retry.go:31] will retry after 604.28565ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:06.114681    9943 provision.go:84] configureAuth start
+I0119 10:30:06.114683    9943 provision.go:143] copyHostCerts
+I0119 10:30:06.114714    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:30:06.114716    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:30:06.115049    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:30:06.115214    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:30:06.115217    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:30:06.115259    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:30:06.115359    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:30:06.115360    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:30:06.115394    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:30:06.115475    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:30:06.207491    9943 provision.go:177] copyRemoteCerts
+I0119 10:30:06.207523    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:30:06.207527    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:06.208211    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:06.208215    9943 retry.go:31] will retry after 292.198637ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:06.502327    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:06.502345    9943 retry.go:31] will retry after 491.20842ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:06.995590    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:06.995614    9943 retry.go:31] will retry after 411.181782ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:07.408521    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:07.408540    9943 retry.go:31] will retry after 422.803813ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:07.833131    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:07.833164    9943 retry.go:31] will retry after 130.128483ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:07.964327    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:07.965190    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:07.965195    9943 retry.go:31] will retry after 333.728173ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:08.300686    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:08.300689    9943 retry.go:31] will retry after 247.632601ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:08.550136    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:08.550139    9943 retry.go:31] will retry after 307.904987ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:08.859782    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:08.859785    9943 retry.go:31] will retry after 659.150114ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:09.520710    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:09.520731    9943 provision.go:87] duration metric: took 3.406098625s to configureAuth
+W0119 10:30:09.520733    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:09.520736    9943 retry.go:31] will retry after 740.643909ms: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:10.262430    9943 provision.go:84] configureAuth start
+I0119 10:30:10.262436    9943 provision.go:143] copyHostCerts
+I0119 10:30:10.262482    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:30:10.262484    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:30:10.262663    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:30:10.262893    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:30:10.262895    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:30:10.262940    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:30:10.263056    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:30:10.263058    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:30:10.263102    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:30:10.263194    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:30:10.356873    9943 provision.go:177] copyRemoteCerts
+I0119 10:30:10.356920    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:30:10.356924    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:10.357608    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:10.357613    9943 retry.go:31] will retry after 289.771299ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:10.649094    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:10.649097    9943 retry.go:31] will retry after 556.250508ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:11.207133    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:11.207136    9943 retry.go:31] will retry after 408.113994ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:11.616822    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:11.616838    9943 retry.go:31] will retry after 204.077751ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:11.821928    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:11.822679    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:11.822682    9943 retry.go:31] will retry after 157.88545ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:11.982183    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:11.982189    9943 retry.go:31] will retry after 557.156866ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:12.541126    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:12.541129    9943 retry.go:31] will retry after 519.350154ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:13.062235    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:13.062271    9943 provision.go:87] duration metric: took 2.799879875s to configureAuth
+W0119 10:30:13.062274    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:13.062285    9943 retry.go:31] will retry after 2.298882896s: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:15.362173    9943 provision.go:84] configureAuth start
+I0119 10:30:15.362183    9943 provision.go:143] copyHostCerts
+I0119 10:30:15.362287    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:30:15.362293    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:30:15.362442    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:30:15.362698    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:30:15.362700    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:30:15.362752    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:30:15.362872    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:30:15.362873    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:30:15.362911    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:30:15.362999    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:30:15.617873    9943 provision.go:177] copyRemoteCerts
+I0119 10:30:15.617943    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:30:15.617951    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:15.618724    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:15.618734    9943 retry.go:31] will retry after 261.935053ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:15.882369    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:15.882374    9943 retry.go:31] will retry after 246.715791ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:16.130840    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:16.130843    9943 retry.go:31] will retry after 633.960417ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:16.766580    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:16.766601    9943 retry.go:31] will retry after 180.471823ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:16.948088    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:16.948791    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:16.948795    9943 retry.go:31] will retry after 217.442482ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:17.167808    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:17.167811    9943 retry.go:31] will retry after 513.304785ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:17.682840    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:17.682843    9943 retry.go:31] will retry after 442.599925ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:18.127154    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:18.127172    9943 provision.go:87] duration metric: took 2.765035625s to configureAuth
+W0119 10:30:18.127174    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:18.127178    9943 retry.go:31] will retry after 1.851518669s: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:19.979682    9943 provision.go:84] configureAuth start
+I0119 10:30:19.979687    9943 provision.go:143] copyHostCerts
+I0119 10:30:19.979730    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:30:19.979733    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:30:19.980027    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:30:19.980212    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:30:19.980215    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:30:19.980264    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:30:19.980370    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:30:19.980372    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:30:19.980418    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:30:19.980503    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:30:20.060084    9943 provision.go:177] copyRemoteCerts
+I0119 10:30:20.060121    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:30:20.060124    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:20.061295    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:20.061298    9943 retry.go:31] will retry after 243.829301ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:20.306905    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:20.306909    9943 retry.go:31] will retry after 327.942387ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:20.636530    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:20.636544    9943 retry.go:31] will retry after 428.361503ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:21.066715    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:21.066719    9943 retry.go:31] will retry after 957.498351ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:22.025970    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:22.026003    9943 provision.go:87] duration metric: took 2.046348292s to configureAuth
+W0119 10:30:22.026005    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:22.026010    9943 retry.go:31] will retry after 5.617315005s: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:27.644295    9943 provision.go:84] configureAuth start
+I0119 10:30:27.644305    9943 provision.go:143] copyHostCerts
+I0119 10:30:27.644404    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:30:27.644410    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:30:27.644559    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:30:27.644804    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:30:27.644806    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:30:27.644850    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:30:27.644961    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:30:27.644962    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:30:27.645004    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:30:27.645103    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:30:27.703885    9943 provision.go:177] copyRemoteCerts
+I0119 10:30:27.703949    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:30:27.703956    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:27.704730    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:27.704746    9943 retry.go:31] will retry after 135.552052ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:27.841868    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:27.841872    9943 retry.go:31] will retry after 227.476049ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:28.071070    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:28.071075    9943 retry.go:31] will retry after 413.377482ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:28.486265    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:28.486268    9943 retry.go:31] will retry after 455.694674ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:28.943726    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:28.943755    9943 retry.go:31] will retry after 316.166136ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:29.260944    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:29.261727    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:29.261730    9943 retry.go:31] will retry after 239.134373ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:29.502657    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:29.502660    9943 retry.go:31] will retry after 295.865299ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:29.800202    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:29.800205    9943 retry.go:31] will retry after 369.722732ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:30.171680    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:30.171684    9943 retry.go:31] will retry after 484.787764ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:30.658075    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:30.658094    9943 provision.go:87] duration metric: took 3.013839541s to configureAuth
+W0119 10:30:30.658096    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:30.658099    9943 retry.go:31] will retry after 5.403308442s: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:36.062382    9943 provision.go:84] configureAuth start
+I0119 10:30:36.062395    9943 provision.go:143] copyHostCerts
+I0119 10:30:36.062480    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:30:36.062491    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:30:36.062640    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:30:36.062893    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:30:36.062895    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:30:36.062946    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:30:36.063047    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:30:36.063048    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:30:36.063094    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:30:36.063186    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:30:36.176780    9943 provision.go:177] copyRemoteCerts
+I0119 10:30:36.177727    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:30:36.177736    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:36.178536    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:36.178549    9943 retry.go:31] will retry after 306.480209ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:36.486879    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:36.486883    9943 retry.go:31] will retry after 202.575891ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:36.691072    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:36.691077    9943 retry.go:31] will retry after 412.345826ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:37.105222    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:37.105224    9943 retry.go:31] will retry after 994.810945ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:38.101775    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:38.101801    9943 provision.go:87] duration metric: took 2.039441083s to configureAuth
+W0119 10:30:38.101803    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:38.101807    9943 retry.go:31] will retry after 11.134327711s: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:49.237088    9943 provision.go:84] configureAuth start
+I0119 10:30:49.237112    9943 provision.go:143] copyHostCerts
+I0119 10:30:49.237332    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/cert.pem, removing ...
+I0119 10:30:49.237341    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/cert.pem
+I0119 10:30:49.238203    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/cert.pem --> /Users/susheelchennoju/.minikube/cert.pem (1147 bytes)
+I0119 10:30:49.238367    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/key.pem, removing ...
+I0119 10:30:49.238370    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/key.pem
+I0119 10:30:49.238417    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/key.pem --> /Users/susheelchennoju/.minikube/key.pem (1679 bytes)
+I0119 10:30:49.238508    9943 exec_runner.go:144] found /Users/susheelchennoju/.minikube/ca.pem, removing ...
+I0119 10:30:49.238510    9943 exec_runner.go:203] rm: /Users/susheelchennoju/.minikube/ca.pem
+I0119 10:30:49.238549    9943 exec_runner.go:151] cp: /Users/susheelchennoju/.minikube/certs/ca.pem --> /Users/susheelchennoju/.minikube/ca.pem (1103 bytes)
+I0119 10:30:49.238628    9943 provision.go:117] generating server cert: /Users/susheelchennoju/.minikube/machines/server.pem ca-key=/Users/susheelchennoju/.minikube/certs/ca.pem private-key=/Users/susheelchennoju/.minikube/certs/ca-key.pem org=susheelchennoju.minikube san=[127.0.0.1 localhost minikube]
+I0119 10:30:49.322467    9943 provision.go:177] copyRemoteCerts
+I0119 10:30:49.323710    9943 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0119 10:30:49.323718    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:49.324525    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:49.324535    9943 retry.go:31] will retry after 358.818448ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:49.685162    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:49.685171    9943 retry.go:31] will retry after 237.470091ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:49.924370    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:49.924374    9943 retry.go:31] will retry after 452.327089ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:50.378482    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:50.378513    9943 retry.go:31] will retry after 220.167664ms: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:50.599723    9943 sshutil.go:53] new ssh client: &{IP:localhost Port:22 SSHKeyPath:/Users/susheelchennoju/.minikube/machines/minikube/id_rsa Username:docker}
+W0119 10:30:50.600456    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:50.600459    9943 retry.go:31] will retry after 180.626545ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:50.782709    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:50.782712    9943 retry.go:31] will retry after 386.203061ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:51.170508    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:51.170512    9943 retry.go:31] will retry after 514.613513ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:51.686846    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:51.686848    9943 retry.go:31] will retry after 854.562463ms: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:52.543158    9943 sshutil.go:64] dial failure (will retry): dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:52.543180    9943 provision.go:87] duration metric: took 3.306127917s to configureAuth
+W0119 10:30:52.543182    9943 buildroot.go:177] configureAuth failed: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:52.543187    9943 buildroot.go:185] Error configuring auth during provisioning Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:52.543199    9943 machine.go:96] duration metric: took 10m56.520831917s to provisionDockerMachine
+I0119 10:30:52.543209    9943 fix.go:56] duration metric: took 10m56.534907625s for fixHost
+I0119 10:30:52.543212    9943 start.go:83] releasing machines lock for "minikube", held for 10m56.535012s
+W0119 10:30:52.543234    9943 start.go:714] error starting host: provision: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+W0119 10:30:52.545098    9943 out.go:270] 🤦  StartHost failed, but will try again: provision: Temporary Error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:30:52.545113    9943 start.go:729] Will try again in 5 seconds ...
+I0119 10:30:57.547169    9943 start.go:360] acquireMachinesLock for minikube: {Name:mk5864584cdc4232dfa04e6e21c0f771a9963687 Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0119 10:30:57.548186    9943 start.go:364] duration metric: took 605.75µs to acquireMachinesLock for "minikube"
+I0119 10:30:57.548435    9943 start.go:96] Skipping create...Using existing machine configuration
+I0119 10:30:57.548439    9943 fix.go:54] fixHost starting: 
+I0119 10:30:57.550663    9943 fix.go:112] recreateIfNeeded on minikube: state=Running err=<nil>
+W0119 10:30:57.550881    9943 fix.go:138] unexpected machine state, will restart: <nil>
+I0119 10:30:57.555461    9943 out.go:177] 🏃  Updating the running qemu2 "minikube" VM ...
+I0119 10:30:57.561442    9943 machine.go:93] provisionDockerMachine start ...
+I0119 10:30:57.561971    9943 main.go:141] libmachine: Using SSH client type: native
+I0119 10:30:57.562059    9943 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x102a68790] 0x102a6afd0 <nil>  [] 0s} localhost 22 <nil> <nil>}
+I0119 10:30:57.562062    9943 main.go:141] libmachine: About to run SSH command:
+hostname
+I0119 10:30:57.562673    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:00.564450    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:03.566096    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:06.567894    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:09.569754    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:12.571496    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:15.573162    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:18.574888    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:21.576625    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:24.578366    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:27.580083    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:30.581881    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:33.583646    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:36.585461    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:39.587156    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:42.588785    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:45.590806    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:48.592853    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:51.594625    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:54.596353    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:31:57.597998    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:00.599667    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:03.601365    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:06.603228    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:09.605238    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:12.607279    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:15.609295    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:18.611320    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:21.613145    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:24.615193    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:27.617138    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:30.619029    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:33.620777    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:36.622715    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:39.624394    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:42.626384    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:45.628249    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:48.629971    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:51.634755    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:54.638729    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:32:57.640598    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:00.642647    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:03.644195    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:06.645942    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:09.648011    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:12.649645    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:15.651870    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:18.655383    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:21.657457    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:24.659427    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:27.661580    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:30.663348    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:33.665378    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:36.667245    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:39.669146    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:42.671144    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:45.672677    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:48.674602    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:51.676480    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:54.679635    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:33:57.682615    9943 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0119 10:33:57.684997    9943 buildroot.go:166] provisioning hostname "minikube"
+I0119 10:33:57.687208    9943 main.go:141] libmachine: Using SSH client type: native
+I0119 10:33:57.693841    9943 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x102a68790] 0x102a6afd0 <nil>  [] 0s} localhost 22 <nil> <nil>}
+I0119 10:33:57.693851    9943 main.go:141] libmachine: About to run SSH command:
+sudo hostname minikube && echo "minikube" | sudo tee /etc/hostname
+I0119 10:33:57.694500    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:00.696295    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:03.698445    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:06.700417    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:09.702021    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:12.703825    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:15.713057    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:18.715611    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:21.717735    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:24.719550    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:27.721489    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:30.722569    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:33.724486    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:36.726448    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:39.729592    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:42.731602    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:45.733559    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:48.735492    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:51.737546    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:54.739288    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:34:57.741234    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:35:00.742971    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+I0119 10:35:03.744915    9943 main.go:141] libmachine: Error dialing TCP: dial tcp 127.0.0.1:22: connect: connection refused
+
+
+==> Docker <==
+command /bin/bash -c "sudo journalctl -u docker -u cri-docker -n 60" failed with error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+
+==> container status <==
+command /bin/bash -c "sudo `which crictl || echo crictl` ps -a || sudo docker ps -a" failed with error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+
+==> describe nodes <==
+command /bin/bash -c "sudo /var/lib/minikube/binaries/v1.32.0/kubectl describe nodes --kubeconfig=/var/lib/minikube/kubeconfig" failed with error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+
+==> dmesg <==
+command /bin/bash -c "sudo dmesg -PH -L=never --level warn,err,crit,alert,emerg | tail -n 60" failed with error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+
+==> kernel <==
+command /bin/bash -c "uptime && uname -a && grep PRETTY /etc/os-release" failed with error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
+
+==> kubelet <==
+command /bin/bash -c "sudo journalctl -u kubelet -n 60" failed with error: NewSession: new client: new client: dial tcp 127.0.0.1:22: connect: connection refused
