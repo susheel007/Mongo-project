@@ -22,6 +22,7 @@
 | service      | mongo-express-service         | minikube | susheelchennoju | v1.35.0 | 19 Jan 25 17:10 CST |                     |
 | service      | mongo-express                 | minikube | susheelchennoju | v1.35.0 | 19 Jan 25 17:10 CST | 19 Jan 25 17:11 CST |
 | service      | mongo-express-service         | minikube | susheelchennoju | v1.35.0 | 19 Jan 25 17:12 CST |                     |
+| service      | mongo-express-service         | minikube | susheelchennoju | v1.35.0 | 19 Jan 25 21:09 CST |                     |
 |--------------|-------------------------------|----------|-----------------|---------|---------------------|---------------------|
 
 
@@ -954,17 +955,17 @@ Jan 19 22:45:11 minikube cri-dockerd[1517]: time="2025-01-19T22:45:11Z" level=in
 
 ==> container status <==
 CONTAINER           IMAGE                                                                                   CREATED             STATE               NAME                      ATTEMPT             POD ID              POD
-d68d950713ac3       mongo-express@sha256:1b23d7976f0210dbec74045c209e52fbb26d29b2e873d6c6fa3d3f0ae32c2a64   27 minutes ago      Running             mongo-express             9                   68fe76eb193dc       mongo-express-5dd87b9fcf-5j522
-0cf4eecf1d065       mongo-express@sha256:1b23d7976f0210dbec74045c209e52fbb26d29b2e873d6c6fa3d3f0ae32c2a64   33 minutes ago      Exited              mongo-express             8                   68fe76eb193dc       mongo-express-5dd87b9fcf-5j522
-7c136235de64f       mongo@sha256:33d17eb9a1c27c6635d08f890cd075d0f9392c598eaad8c4461344ac5fbc7140           2 hours ago         Running             mongodb                   0                   368860847cfbf       my-name-mongodb-deployment-5b8c785c-ck8zv
-656d3fc6120c4       ba04bb24b9575                                                                           2 hours ago         Running             storage-provisioner       2                   6f465ceccb33f       storage-provisioner
-52a8876e2266f       ba04bb24b9575                                                                           5 hours ago         Exited              storage-provisioner       1                   6f465ceccb33f       storage-provisioner
-f9412c6b97e35       2f6c962e7b831                                                                           5 hours ago         Running             coredns                   0                   2eb2b325a3dca       coredns-668d6bf9bc-b6hwf
-e7664f2707e60       2f50386e20bfd                                                                           5 hours ago         Running             kube-proxy                0                   420c011b04f15       kube-proxy-nj4hn
-f2df69cd17637       2b5bd0f16085a                                                                           5 hours ago         Running             kube-apiserver            0                   cdc963a358a20       kube-apiserver-minikube
-69a8638dafce0       a8d049396f6b8                                                                           5 hours ago         Running             kube-controller-manager   0                   33791fd632946       kube-controller-manager-minikube
-1c515e97750d5       c3ff26fb59f37                                                                           5 hours ago         Running             kube-scheduler            0                   a5e517e948efd       kube-scheduler-minikube
-d1b9f27afd048       7fc9d4aa817aa                                                                           5 hours ago         Running             etcd                      0                   522dccb3233b4       etcd-minikube
+d68d950713ac3       mongo-express@sha256:1b23d7976f0210dbec74045c209e52fbb26d29b2e873d6c6fa3d3f0ae32c2a64   4 hours ago         Running             mongo-express             9                   68fe76eb193dc       mongo-express-5dd87b9fcf-5j522
+0cf4eecf1d065       mongo-express@sha256:1b23d7976f0210dbec74045c209e52fbb26d29b2e873d6c6fa3d3f0ae32c2a64   5 hours ago         Exited              mongo-express             8                   68fe76eb193dc       mongo-express-5dd87b9fcf-5j522
+7c136235de64f       mongo@sha256:33d17eb9a1c27c6635d08f890cd075d0f9392c598eaad8c4461344ac5fbc7140           5 hours ago         Running             mongodb                   0                   368860847cfbf       my-name-mongodb-deployment-5b8c785c-ck8zv
+656d3fc6120c4       ba04bb24b9575                                                                           6 hours ago         Running             storage-provisioner       2                   6f465ceccb33f       storage-provisioner
+52a8876e2266f       ba04bb24b9575                                                                           9 hours ago         Exited              storage-provisioner       1                   6f465ceccb33f       storage-provisioner
+f9412c6b97e35       2f6c962e7b831                                                                           9 hours ago         Running             coredns                   0                   2eb2b325a3dca       coredns-668d6bf9bc-b6hwf
+e7664f2707e60       2f50386e20bfd                                                                           9 hours ago         Running             kube-proxy                0                   420c011b04f15       kube-proxy-nj4hn
+f2df69cd17637       2b5bd0f16085a                                                                           9 hours ago         Running             kube-apiserver            0                   cdc963a358a20       kube-apiserver-minikube
+69a8638dafce0       a8d049396f6b8                                                                           9 hours ago         Running             kube-controller-manager   0                   33791fd632946       kube-controller-manager-minikube
+1c515e97750d5       c3ff26fb59f37                                                                           9 hours ago         Running             kube-scheduler            0                   a5e517e948efd       kube-scheduler-minikube
+d1b9f27afd048       7fc9d4aa817aa                                                                           9 hours ago         Running             etcd                      0                   522dccb3233b4       etcd-minikube
 
 
 ==> coredns [f9412c6b97e3] <==
@@ -1054,14 +1055,14 @@ Unschedulable:      false
 Lease:
   HolderIdentity:  minikube
   AcquireTime:     <unset>
-  RenewTime:       Sun, 19 Jan 2025 23:12:58 +0000
+  RenewTime:       Mon, 20 Jan 2025 03:10:14 +0000
 Conditions:
   Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
   ----             ------  -----------------                 ------------------                ------                       -------
-  MemoryPressure   False   Sun, 19 Jan 2025 23:11:57 +0000   Sun, 19 Jan 2025 18:31:36 +0000   KubeletHasSufficientMemory   kubelet has sufficient memory available
-  DiskPressure     False   Sun, 19 Jan 2025 23:11:57 +0000   Sun, 19 Jan 2025 18:31:36 +0000   KubeletHasNoDiskPressure     kubelet has no disk pressure
-  PIDPressure      False   Sun, 19 Jan 2025 23:11:57 +0000   Sun, 19 Jan 2025 18:31:36 +0000   KubeletHasSufficientPID      kubelet has sufficient PID available
-  Ready            True    Sun, 19 Jan 2025 23:11:57 +0000   Sun, 19 Jan 2025 18:31:37 +0000   KubeletReady                 kubelet is posting ready status
+  MemoryPressure   False   Mon, 20 Jan 2025 03:08:42 +0000   Sun, 19 Jan 2025 18:31:36 +0000   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 20 Jan 2025 03:08:42 +0000   Sun, 19 Jan 2025 18:31:36 +0000   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 20 Jan 2025 03:08:42 +0000   Sun, 19 Jan 2025 18:31:36 +0000   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 20 Jan 2025 03:08:42 +0000   Sun, 19 Jan 2025 18:31:37 +0000   KubeletReady                 kubelet is posting ready status
 Addresses:
   InternalIP:  192.168.49.2
   Hostname:    minikube
@@ -1099,15 +1100,15 @@ PodCIDRs:                     10.244.0.0/24
 Non-terminated Pods:          (9 in total)
   Namespace                   Name                                         CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
   ---------                   ----                                         ------------  ----------  ---------------  -------------  ---
-  default                     mongo-express-5dd87b9fcf-5j522               0 (0%)        0 (0%)      0 (0%)           0 (0%)         55m
-  default                     my-name-mongodb-deployment-5b8c785c-ck8zv    0 (0%)        0 (0%)      0 (0%)           0 (0%)         92m
-  kube-system                 coredns-668d6bf9bc-b6hwf                     100m (2%)     0 (0%)      70Mi (3%)        170Mi (8%)     4h41m
-  kube-system                 etcd-minikube                                100m (2%)     0 (0%)      100Mi (5%)       0 (0%)         4h41m
-  kube-system                 kube-apiserver-minikube                      250m (6%)     0 (0%)      0 (0%)           0 (0%)         4h41m
-  kube-system                 kube-controller-manager-minikube             200m (5%)     0 (0%)      0 (0%)           0 (0%)         4h41m
-  kube-system                 kube-proxy-nj4hn                             0 (0%)        0 (0%)      0 (0%)           0 (0%)         4h41m
-  kube-system                 kube-scheduler-minikube                      100m (2%)     0 (0%)      0 (0%)           0 (0%)         4h41m
-  kube-system                 storage-provisioner                          0 (0%)        0 (0%)      0 (0%)           0 (0%)         4h41m
+  default                     mongo-express-5dd87b9fcf-5j522               0 (0%)        0 (0%)      0 (0%)           0 (0%)         4h52m
+  default                     my-name-mongodb-deployment-5b8c785c-ck8zv    0 (0%)        0 (0%)      0 (0%)           0 (0%)         5h29m
+  kube-system                 coredns-668d6bf9bc-b6hwf                     100m (2%)     0 (0%)      70Mi (3%)        170Mi (8%)     8h
+  kube-system                 etcd-minikube                                100m (2%)     0 (0%)      100Mi (5%)       0 (0%)         8h
+  kube-system                 kube-apiserver-minikube                      250m (6%)     0 (0%)      0 (0%)           0 (0%)         8h
+  kube-system                 kube-controller-manager-minikube             200m (5%)     0 (0%)      0 (0%)           0 (0%)         8h
+  kube-system                 kube-proxy-nj4hn                             0 (0%)        0 (0%)      0 (0%)           0 (0%)         8h
+  kube-system                 kube-scheduler-minikube                      100m (2%)     0 (0%)      0 (0%)           0 (0%)         8h
+  kube-system                 storage-provisioner                          0 (0%)        0 (0%)      0 (0%)           0 (0%)         8h
 Allocated resources:
   (Total limits may be over 100 percent, i.e., overcommitted.)
   Resource           Requests    Limits
@@ -1123,24 +1124,15 @@ Events:              <none>
 
 
 ==> dmesg <==
-[Jan19 18:35] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[Jan19 22:22] cacheinfo: Unable to detect cache hierarchy for CPU 0
 [  +0.019619] the cryptoloop driver has been deprecated and will be removed in in Linux 5.16
 [  +5.531321] grpcfuse: loading out-of-tree module taints kernel.
-[Jan19 18:37] tmpfs: Unknown parameter 'noswap'
+[Jan19 22:24] tmpfs: Unknown parameter 'noswap'
 [  +3.969825] tmpfs: Unknown parameter 'noswap'
-[Jan19 18:38] hrtimer: interrupt took 8308625 ns
+[Jan19 22:25] hrtimer: interrupt took 8308625 ns
 
 
 ==> etcd [d1b9f27afd04] <==
-{"level":"info","ts":"2025-01-19T21:42:17.450603Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":9206}
-{"level":"info","ts":"2025-01-19T21:42:17.455399Z","caller":"mvcc/kvstore_compaction.go:72","msg":"finished scheduled compaction","compact-revision":9206,"took":"3.778292ms","hash":502404247,"current-db-size-bytes":1720320,"current-db-size":"1.7 MB","current-db-size-in-use-bytes":921600,"current-db-size-in-use":"922 kB"}
-{"level":"info","ts":"2025-01-19T21:42:17.455482Z","caller":"mvcc/hash.go:151","msg":"storing new hash","hash":502404247,"revision":9206,"compact-revision":8965}
-{"level":"info","ts":"2025-01-19T21:47:17.458028Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":9464}
-{"level":"info","ts":"2025-01-19T21:47:17.466294Z","caller":"mvcc/kvstore_compaction.go:72","msg":"finished scheduled compaction","compact-revision":9464,"took":"7.354583ms","hash":257965640,"current-db-size-bytes":1720320,"current-db-size":"1.7 MB","current-db-size-in-use-bytes":929792,"current-db-size-in-use":"930 kB"}
-{"level":"info","ts":"2025-01-19T21:47:17.466381Z","caller":"mvcc/hash.go:151","msg":"storing new hash","hash":257965640,"revision":9464,"compact-revision":9206}
-{"level":"info","ts":"2025-01-19T21:52:17.464638Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":9704}
-{"level":"info","ts":"2025-01-19T21:52:17.467325Z","caller":"mvcc/kvstore_compaction.go:72","msg":"finished scheduled compaction","compact-revision":9704,"took":"1.964625ms","hash":2300379301,"current-db-size-bytes":1720320,"current-db-size":"1.7 MB","current-db-size-in-use-bytes":888832,"current-db-size-in-use":"889 kB"}
-{"level":"info","ts":"2025-01-19T21:52:17.467364Z","caller":"mvcc/hash.go:151","msg":"storing new hash","hash":2300379301,"revision":9704,"compact-revision":9464}
 {"level":"info","ts":"2025-01-19T21:57:17.471818Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":9944}
 {"level":"info","ts":"2025-01-19T21:57:17.475059Z","caller":"mvcc/kvstore_compaction.go:72","msg":"finished scheduled compaction","compact-revision":9944,"took":"2.424875ms","hash":2932194275,"current-db-size-bytes":1720320,"current-db-size":"1.7 MB","current-db-size-in-use-bytes":876544,"current-db-size-in-use":"876 kB"}
 {"level":"info","ts":"2025-01-19T21:57:17.475122Z","caller":"mvcc/hash.go:151","msg":"storing new hash","hash":2932194275,"revision":9944,"compact-revision":9704}
@@ -1192,19 +1184,24 @@ Events:              <none>
 {"level":"info","ts":"2025-01-19T23:12:33.002982Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":13729}
 {"level":"info","ts":"2025-01-19T23:12:33.006290Z","caller":"mvcc/kvstore_compaction.go:72","msg":"finished scheduled compaction","compact-revision":13729,"took":"2.589125ms","hash":522757653,"current-db-size-bytes":2420736,"current-db-size":"2.4 MB","current-db-size-in-use-bytes":1699840,"current-db-size-in-use":"1.7 MB"}
 {"level":"info","ts":"2025-01-19T23:12:33.006593Z","caller":"mvcc/hash.go:151","msg":"storing new hash","hash":522757653,"revision":13729,"compact-revision":13488}
+{"level":"info","ts":"2025-01-19T23:14:52.241790Z","caller":"traceutil/trace.go:171","msg":"trace[315355114] linearizableReadLoop","detail":"{readStateIndex:17520; appliedIndex:17520; }","duration":"164.210792ms","start":"2025-01-19T23:14:52.076955Z","end":"2025-01-19T23:14:52.241165Z","steps":["trace[315355114] 'read index received'  (duration: 164.20675ms)","trace[315355114] 'applied index is now lower than readState.Index'  (duration: 3.333µs)"],"step_count":2}
+{"level":"warn","ts":"2025-01-19T23:14:52.242999Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"165.581375ms","expected-duration":"100ms","prefix":"read-only range ","request":"limit:1 keys_only:true ","response":"range_response_count:0 size:5"}
+{"level":"info","ts":"2025-01-19T23:14:52.243122Z","caller":"traceutil/trace.go:171","msg":"trace[274391515] range","detail":"{range_begin:; range_end:; response_count:0; response_revision:14093; }","duration":"166.104125ms","start":"2025-01-19T23:14:52.076943Z","end":"2025-01-19T23:14:52.243047Z","steps":["trace[274391515] 'agreement among raft nodes before linearized reading'  (duration: 165.569ms)"],"step_count":1}
+{"level":"info","ts":"2025-01-19T23:17:33.006772Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":13982}
+{"level":"info","ts":"2025-01-19T23:17:33.010696Z","caller":"mvcc/kvstore_compaction.go:72","msg":"finished scheduled compaction","compact-revision":13982,"took":"3.122875ms","hash":3908337246,"current-db-size-bytes":2420736,"current-db-size":"2.4 MB","current-db-size-in-use-bytes":1703936,"current-db-size-in-use":"1.7 MB"}
+{"level":"info","ts":"2025-01-19T23:17:33.010739Z","caller":"mvcc/hash.go:151","msg":"storing new hash","hash":3908337246,"revision":13982,"compact-revision":13729}
+{"level":"info","ts":"2025-01-20T03:09:05.485890Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":14221}
+{"level":"info","ts":"2025-01-20T03:09:05.497462Z","caller":"mvcc/kvstore_compaction.go:72","msg":"finished scheduled compaction","compact-revision":14221,"took":"10.597125ms","hash":1749937325,"current-db-size-bytes":2420736,"current-db-size":"2.4 MB","current-db-size-in-use-bytes":1110016,"current-db-size-in-use":"1.1 MB"}
+{"level":"info","ts":"2025-01-20T03:09:05.497625Z","caller":"mvcc/hash.go:151","msg":"storing new hash","hash":1749937325,"revision":14221,"compact-revision":13982}
 
 
 ==> kernel <==
- 23:13:05 up  4:37,  0 users,  load average: 0.14, 0.25, 0.31
+ 03:10:17 up  4:48,  0 users,  load average: 0.26, 0.34, 0.31
 Linux minikube 5.10.76-linuxkit #1 SMP PREEMPT Mon Nov 8 11:22:26 UTC 2021 aarch64 aarch64 aarch64 GNU/Linux
 PRETTY_NAME="Ubuntu 22.04.5 LTS"
 
 
 ==> kube-apiserver [f2df69cd1763] <==
-I0119 18:31:37.348408       1 controller.go:78] Starting OpenAPI AggregationController
-I0119 18:31:37.351550       1 remote_available_controller.go:411] Starting RemoteAvailability controller
-I0119 18:31:37.351642       1 cache.go:32] Waiting for caches to sync for RemoteAvailability controller
-I0119 18:31:37.351659       1 system_namespaces_controller.go:66] Starting system namespaces controller
 I0119 18:31:37.351674       1 apf_controller.go:377] Starting API Priority and Fairness config controller
 I0119 18:31:37.351718       1 dynamic_serving_content.go:135] "Starting controller" name="aggregator-proxy-cert::/var/lib/minikube/certs/front-proxy-client.crt::/var/lib/minikube/certs/front-proxy-client.key"
 I0119 18:31:37.351730       1 customresource_discovery_controller.go:292] Starting DiscoveryController
@@ -1261,15 +1258,13 @@ E0119 21:00:18.415755       1 timeout.go:140] "Post-timeout activity" logger="Un
 I0119 21:58:56.038069       1 alloc.go:330] "allocated clusterIPs" service="default/my-name-mongodb-servive" clusterIPs={"IPv4":"10.109.220.243"}
 I0119 22:17:56.700716       1 alloc.go:330] "allocated clusterIPs" service="default/mongo-express-service" clusterIPs={"IPv4":"10.96.205.118"}
 I0119 23:10:04.757148       1 alloc.go:330] "allocated clusterIPs" service="default/mongo-express" clusterIPs={"IPv4":"10.108.140.237"}
+E0119 23:51:32.050085       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E0119 23:51:32.050118       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E0120 02:12:55.725183       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E0120 02:12:55.725183       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
 
 
 ==> kube-controller-manager [69a8638dafce] <==
-I0119 22:17:56.756321       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/mongo-express-5dd87b9fcf" duration="10.75µs"
-I0119 22:17:56.764125       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/mongo-express-5dd87b9fcf" duration="18.584µs"
-I0119 22:18:06.135762       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/mongo-express-5dd87b9fcf" duration="14.270584ms"
-I0119 22:18:06.136113       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/mongo-express-5dd87b9fcf" duration="212.042µs"
-I0119 22:18:20.857503       1 range_allocator.go:247] "Successfully synced" logger="node-ipam-controller" key="minikube"
-I0119 22:18:46.682092       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/mongo-express-5dd87b9fcf" duration="13.971875ms"
 I0119 22:18:46.682201       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/mongo-express-5dd87b9fcf" duration="49.166µs"
 I0119 22:18:47.730059       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/mongo-express-5dd87b9fcf" duration="10.997375ms"
 I0119 22:18:47.730855       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="default/mongo-express-5dd87b9fcf" duration="190.791µs"
@@ -1324,6 +1319,12 @@ I0119 22:56:37.952430       1 range_allocator.go:247] "Successfully synced" logg
 I0119 23:01:44.105761       1 range_allocator.go:247] "Successfully synced" logger="node-ipam-controller" key="minikube"
 I0119 23:06:51.151153       1 range_allocator.go:247] "Successfully synced" logger="node-ipam-controller" key="minikube"
 I0119 23:11:57.280453       1 range_allocator.go:247] "Successfully synced" logger="node-ipam-controller" key="minikube"
+I0119 23:17:04.171502       1 range_allocator.go:247] "Successfully synced" logger="node-ipam-controller" key="minikube"
+E0119 23:51:32.058959       1 resource_quota_controller.go:446] "Unhandled Error" err="failed to discover resources: the server has asked for the client to provide credentials" logger="UnhandledError"
+I0119 23:51:32.075902       1 garbagecollector.go:789] "failed to discover preferred resources" logger="garbage-collector-controller" error="the server has asked for the client to provide credentials"
+I0120 02:12:55.726291       1 garbagecollector.go:789] "failed to discover preferred resources" logger="garbage-collector-controller" error="the server has asked for the client to provide credentials"
+E0120 02:12:55.726364       1 resource_quota_controller.go:446] "Unhandled Error" err="failed to discover resources: the server has asked for the client to provide credentials" logger="UnhandledError"
+I0120 03:08:42.905042       1 range_allocator.go:247] "Successfully synced" logger="node-ipam-controller" key="minikube"
 
 
 ==> kube-proxy [e7664f2707e6] <==
