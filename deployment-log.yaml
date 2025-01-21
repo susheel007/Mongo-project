@@ -1,0 +1,166 @@
+apiVersion: v1
+items:
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{},"labels":{"app":"mongo-express"},"name":"mongo-express","namespace":"default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"mongo-express"}},"template":{"metadata":{"labels":{"app":"mongo-express"}},"spec":{"containers":[{"env":[{"name":"ME_CONFIG_MONGODB_ADMINUSERNAME","valueFrom":{"secretKeyRef":{"key":"mongo-root-username","name":"mongodb-secret"}}},{"name":"ME_CONFIG_MONGODB_ADMINPASSWORD","valueFrom":{"secretKeyRef":{"key":"mongo-root-password","name":"mongodb-secret"}}},{"name":"ME_CONFIG_MONGODB_SERVER","valueFrom":{"configMapKeyRef":{"key":"database_url","name":"mongodb-configmap"}}}],"image":"mongo-express","name":"mongo-express","ports":[{"containerPort":8081}]}]}}}}
+    creationTimestamp: "2025-01-19T22:17:56Z"
+    generation: 1
+    labels:
+      app: mongo-express
+    name: mongo-express
+    namespace: default
+    resourceVersion: "12658"
+    uid: 3c78ea47-c260-4d5a-9591-224ceef5744f
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        app: mongo-express
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          app: mongo-express
+      spec:
+        containers:
+        - env:
+          - name: ME_CONFIG_MONGODB_ADMINUSERNAME
+            valueFrom:
+              secretKeyRef:
+                key: mongo-root-username
+                name: mongodb-secret
+          - name: ME_CONFIG_MONGODB_ADMINPASSWORD
+            valueFrom:
+              secretKeyRef:
+                key: mongo-root-password
+                name: mongodb-secret
+          - name: ME_CONFIG_MONGODB_SERVER
+            valueFrom:
+              configMapKeyRef:
+                key: database_url
+                name: mongodb-configmap
+          image: mongo-express
+          imagePullPolicy: Always
+          name: mongo-express
+          ports:
+          - containerPort: 8081
+            protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 1
+    conditions:
+    - lastTransitionTime: "2025-01-19T22:17:56Z"
+      lastUpdateTime: "2025-01-19T22:18:06Z"
+      message: ReplicaSet "mongo-express-5dd87b9fcf" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    - lastTransitionTime: "2025-01-19T22:45:12Z"
+      lastUpdateTime: "2025-01-19T22:45:12Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    observedGeneration: 1
+    readyReplicas: 1
+    replicas: 1
+    updatedReplicas: 1
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{},"labels":{"app":"mongodb"},"name":"my-name-mongodb-deployment","namespace":"default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"mongodb"}},"template":{"metadata":{"labels":{"app":"mongodb"}},"spec":{"containers":[{"env":[{"name":"MONGO_INITDB_ROOT_USERNAME","valueFrom":{"secretKeyRef":{"key":"mongo-root-username","name":"mongodb-secret"}}},{"name":"MONGO_INITDB_ROOT_PASSWORD","valueFrom":{"secretKeyRef":{"key":"mongo-root-password","name":"mongodb-secret"}}}],"image":"mongo:latest","name":"mongodb","ports":[{"containerPort":27017}]}]}}}}
+    creationTimestamp: "2025-01-19T21:40:33Z"
+    generation: 1
+    labels:
+      app: mongodb
+    name: my-name-mongodb-deployment
+    namespace: default
+    resourceVersion: "9382"
+    uid: 02b5bb8f-65cb-4141-bfca-aecfc1230e64
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        app: mongodb
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          app: mongodb
+      spec:
+        containers:
+        - env:
+          - name: MONGO_INITDB_ROOT_USERNAME
+            valueFrom:
+              secretKeyRef:
+                key: mongo-root-username
+                name: mongodb-secret
+          - name: MONGO_INITDB_ROOT_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                key: mongo-root-password
+                name: mongodb-secret
+          image: mongo:latest
+          imagePullPolicy: Always
+          name: mongodb
+          ports:
+          - containerPort: 27017
+            protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 1
+    conditions:
+    - lastTransitionTime: "2025-01-19T21:40:35Z"
+      lastUpdateTime: "2025-01-19T21:40:35Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2025-01-19T21:40:33Z"
+      lastUpdateTime: "2025-01-19T21:40:35Z"
+      message: ReplicaSet "my-name-mongodb-deployment-5b8c785c" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 1
+    readyReplicas: 1
+    replicas: 1
+    updatedReplicas: 1
+kind: List
+metadata:
+  resourceVersion: ""
